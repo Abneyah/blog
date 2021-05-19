@@ -38,10 +38,12 @@
 html,
 body {
   overflow-x: hidden;
+  direction: rtl;
 }
 
 html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  direction: rtl;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -305,6 +307,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
+  direction: rtl;
 }
 
 /* Blog post or page title */
