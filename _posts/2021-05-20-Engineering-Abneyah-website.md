@@ -3,11 +3,10 @@ layout: post
 title: هندسة موقع أبنية
 ---
 
-[Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
+سأتطرق في هذه المدونة للحديث عن كيفية استخدامنا لخدمات أمازون السحابية في بناء موقع أبنية
+
+لا يعتمد موقع أبنية في تشغيله على أي خوادم (servers) حيث إن جميع الخدمات التي نستخدمها هي من فئة (serverless)
+يقوم مبدأ الـ serverless على أن مستخدم الخدمة يقوم فقط بدفع قيمة الاستخدام الفعلي للخدة pay-per-consumption. فبخلاف الطرق التي تعتمد على استخدام الخوادم والتي من خلالها يقوم المستخدم بدفع تكلفة تشغيل الخادم في كل الأوقات حتى وإن لم يكن هناك أي زائر للموقع، تمكن خدمة الـ serverless المستخدم من دفع تكلفة الفترة التي يقوم فيها زائر بزيارة الموقع.
+
 <img src="https://blog.abneyah.com/public/img/website_architecture.png" alt="Abneyah">
 
-
-
-It's an immensely useful tool and one we encourage you to use here with Lanyon.
-
-Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
