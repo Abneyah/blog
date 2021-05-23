@@ -27,7 +27,7 @@ title: How we ship code
 ### AWS Lambda & Abneyah Bot
 نستخدم Slack للتواصل بيننا. فالإضافة إلى سهولة استخدامه، يدعم Slack عدداً من البرامج التي نستخدمها لإدارة المنصة ومواقعنا الإلكترونية. قمنا بإنشاء Abneyah Bot باستخدام Slack API لإرسال تنبيهات لنا من ضمنها تنبيهنا حال انتهاء AWS CodeBuild من تحديث مواقعنا الإلكترونية أو التطبيق. نرسل طلب Slack API باستخدام AWS Lambda Function و التي تمكننا من تنفيذ  - invoke -أكواد برمجية دون الحاجة إلى لاستخدام خوادم خاصة بنا. إذ تقوم AWS بتفيذ أكواد البرمجة باستخدام خوادمها الخاصة ونقوم بدفع تكلفة تشغيل الـFunction لحين انتهائها من تنفيذ الطلب. لكي نقوم بعمل – invocation – للـ Lambda Function, أضفنا IAM policy لـIAM Role الخاص بالـ AWS CodePipeline. 
 
-#### AWS Systems Manager Parameter Store أو AWS Secret Manager
+### AWS Systems Manager Parameter Store أو AWS Secret Manager
 خدمة AWS Systems Manager Parameter Store ليست الخدمة الوحيدة التي تقدمها AWS لحماية الكلمات السرية الخاصة بالمستخدمين إذ أن خدمة AWS Secret Manager تقوم بنفس الوظيفة بالإضافة إلى وظائف متخصصة أكثر مثل إنشاء كلمات سرية بالنيابة عن المستخدم و أتمتة تدوير الكلمات السرية والتي قد تكون من متطلبات الإمتثال الأمني   - Security Compliance – بالقيام بتدوير الكلمات السرية بشكل دوري. تدعم هذه الخدمة أتمتة تدوير الكلمات السرية لبعض من قواعد البيانات التي توفرها AWS مثل AWS RDS, AWS RedShift.  
 
 فضلنا استخدام AWS Systems Manager Parameter Store على AWS Secret Manager لسبب إقتصادي بحت حيث AWS Systems Manager Parameter Store خدمة مجانية في المقابل استخدام خدمة  AWS Secret Manager  تكون بمقابل بسيط جداً لكل كلمة سرية تديرها AWS.
