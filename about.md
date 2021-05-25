@@ -1,29 +1,17 @@
 ---
 layout: page
-title: About
+title: عن أبنية
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+أبنية هي منصة رقمية تجمع كل المختصين في قطاع البناء و العمارة
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+نسعى في أبنية إلى خلق تجربة رائعة للمقبلين على بناء مشاريع تجارية و سكني من خلال توفير عدد من المزايا من أهمها
+* سهولة الوصول لكل المختصين في قطاع البناء و العمارة و إرسال طلبات تنفيذ المشاريع
+* إمكانية حجز موعد زيارة مع المختصين من خلال التطبيق
+* محفظة رقمية لحفظ الملفات و الفواتير المتعلقة بالمشاريع بعيداً عن ملفات العميل الشخصية
+* و غيرها من المزايا
 
-There are currently two themes built on Poole:
+بإمكانكم التعرف على منصة أبنية و خدماتها من خلال هذ الرابط [ِAbneyah](https://abneyah.com)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
