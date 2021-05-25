@@ -28,7 +28,7 @@ title: How we ship code
 •	Resource:  الـresource التي يطبق عليها الصلاحية. بإمكاننا تحديد resource واحد أو مجموعة باستخدام 
 array [] أو regex
 
-لكل resource في AWS اسم خاص يتفرد به ويميزه عن أي resource في كل حسابات AWS الأخرى. يطلق على هذا الإسم Amazon Resource Name أو resoure ويحتوي بشكل أساسي اسم المنطقة الجغرافية التي يتواجد فيها الـ resource. رقم حساب و اسم الـresource نفسه. 
+لكل resource في AWS اسم خاص يتفرد به ويميزه عن أي resource في كل حسابات AWS الأخرى. يطلق على هذا الإسم Amazon Resource Name أو ARN ويحتوي بشكل أساسي اسم المنطقة الجغرافية التي يتواجد فيها الـ resource. رقم حساب و اسم الـresource نفسه. 
 
 ```{
     "Version": "2012-10-17",
