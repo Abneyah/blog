@@ -23,14 +23,16 @@ title: How we ship code
 
 لكي يتمكن أي شخص أو خدمة باستخدام خدمة أخرى يجب أن تكون له أو لها صلاحية لاستخدام الخدمة ويتم ذلك من خلال خدمة IAM. هناك نوعين أساسيين من المستخدمين الذين توفرهم IAM للأشخاص أو الخدمات لغرض استخدام خدمات AWS وهما IAM User وIAM role. IAM User نوع من المستخدمين الذي يتم استخدام صلاحياته بواسطة كلمات سرية Access and Secret keys طويلة الأمد. IAM Role هي وظيفة بإمكان المستخدم أو الخدمة تقمصها لاستخدام الخدمات ويتم ذلك عن طريق قيام AWS بعمل Access key, Secret key, session مؤقتاً نيابة عنا لأداء الخدمة التي نرغب بتنفيذها وتعطيل المفاتيح بعد الانتهاء. استخدام IAM Role بدلاً من IAM User يعتبر الخيار الأسلم والآمن في كل الأوقات متى كان ذلك ممكنا. يتم تحديد صلاحيات الـ IAM User أو IAM Role باستخدام IAM Policies. نقوم في أبنية بجعل AWS Codepipeline يتقمص IAM Role وصلاحيات محددة لإنجاز مهمته. المثال التالي هو نموذج لـ IAM Policy يتم إضافته لـIAM Role  أو IAM User لتحديد صلاحياته. المهم في هذا المثال ٣ أشياء أساسية وهي Effect, Action, Resource
 
-•	Action: تحديد نوع الفعل و هنا نحدد أن الهدف هو تشغيل codebuild بواسطة StartBuild
-•	Effect: نوع الصلاحية إما إعطاء صلاحية بـAllow أو تعطيل صلاحية بـDeny
-•	Resource:  الـresource التي يطبق عليها الصلاحية. بإمكاننا تحديد resource واحد أو مجموعة باستخدام 
+*   Action: تحديد نوع الفعل و هنا نحدد أن الهدف هو تشغيل codebuild بواسطة StartBuild
+*   Effect: نوع الصلاحية إما إعطاء صلاحية بـAllow أو تعطيل صلاحية بـDeny
+*   Resource:  الـresource التي يطبق عليها الصلاحية. بإمكاننا تحديد resource واحد أو مجموعة باستخدام 
 array [] أو regex
+
+<img src="https://blog.abneyah.com/public/img/policy.png" alt="Policy">
 
 لكل resource في AWS اسم خاص يتفرد به ويميزه عن أي resource في كل حسابات AWS الأخرى. يطلق على هذا الإسم Amazon Resource Name أو ARN ويحتوي بشكل أساسي اسم المنطقة الجغرافية التي يتواجد فيها الـ resource. رقم حساب و اسم الـresource نفسه. 
 
-<img src="https://blog.abneyah.com/public/img/policy.png" alt="Policy">
+
 
 لكي يقوم AWS CodeBuild بنقل البرنامج الذي تم الانتهاء من إلى S3 Bucket, قمنا بإعطائه IAM Role ذو صلاحيات لنقل البرنامج إلى S3 Bucket. S3 هي الخدمة التي نستخدمه لإستضافة موقع أبنية و بإمكانكم التعرف على تفاصيل استضافتنا لموقع أبنية من خلال هذا [الرابط](https://blog.abneyah.com/2021/05/20/Engineering-Abneyah-website/)
 
