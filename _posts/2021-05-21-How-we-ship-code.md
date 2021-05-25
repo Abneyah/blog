@@ -30,7 +30,7 @@ array [] أو regex
 
 لكل resource في AWS اسم خاص يتفرد به ويميزه عن أي resource في كل حسابات AWS الأخرى. يطلق على هذا الإسم Amazon Resource Name أو ARN ويحتوي بشكل أساسي اسم المنطقة الجغرافية التي يتواجد فيها الـ resource. رقم حساب و اسم الـresource نفسه. 
 
-<img src="https://blog.abneyah.com/public/img/codepipeline.png" alt="Policy">
+<img src="https://blog.abneyah.com/public/img/policy.png" alt="Policy">
 
 لكي يقوم AWS CodeBuild بنقل البرنامج الذي تم الانتهاء من إلى S3 Bucket, قمنا بإعطائه IAM Role ذو صلاحيات لنقل البرنامج إلى S3 Bucket. S3 هي الخدمة التي نستخدمه لإستضافة موقع أبنية و بإمكانكم التعرف على تفاصيل استضافتنا لموقع أبنية من خلال هذا [الرابط](https://blog.abneyah.com/2021/05/20/Engineering-Abneyah-website/)
 
